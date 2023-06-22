@@ -1,10 +1,11 @@
+def sort(a):
+    min=0
+    for i in range (len(a)):
+        if(a[i]>min):
+            temp=min
+            min=a[i]
+            a[i]=temp
+    return(a)
 
-sl=0
-sr=0
-k=len(n)
-for i in range(k/2):
-    sl=sl+n[i]
-for i in range(k/2,k):
-    sr=sr+n[i]
-print (sl)
-print (sr
+a=[3,5,2,3,542,45,2]
+print(sort(a))
